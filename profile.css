@@ -1,0 +1,106 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing:border-box ;
+}
+body{
+    height :100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    padding: 25px;
+    position: relative;
+    box-shadow: 3px 3px 5px 5px rgb(228, 227, 227);
+}
+.profile_card::before{
+    content: "";
+    position: absolute;
+    height:36%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: blue;
+}
+.image{
+    position: relative;
+    height : 150px;
+    width: 150px;
+    border-radius:50% ;
+    background-color: #4070f4;
+    padding:3px;
+    margin-bottom: 10px;
+
+}
+.image .profile-img{
+    height: 100%;
+    width : 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profile_card .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.text .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile_card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.media-buttons .link{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 18px;
+    margin: 0 8px;
+    height: 34px;
+    width:34px;
+    border-radius: 50%;
+    background-color: blue;
+    text-decoration: none;
+
+}
+.profile_card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.buttons .button{
+    padding:8px;
+    background-color: blue;
+    margin:0 10px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400 ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buttons .button:hover{
+    background-color: rgb(33, 33, 244);
+
+}

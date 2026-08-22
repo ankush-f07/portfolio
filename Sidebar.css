@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(idk2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+#check{
+    display: none;
+}
+
+.sidebar {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    left: -280px;
+    width: 280px;
+    background: rgba(255,255, 255, 0.15);
+    transition: all 0.3s ease;
+    
+}
+.sidebar .logo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 40px;
+    font-weight: 400;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    
+   
+}
+.sidebar .logo a{
+    text-decoration: none;
+    color: white;
+    
+}
+.sidebar .logo i{
+    color: white;
+    font-size: 25px;
+}
+.sidebar .navi{
+    margin-top: 40px;
+    
+    
+}
+.navi ul{
+   
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.navi ul li a{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+}
+.navi ul li i{
+    color: white;
+    
+}
+.navi ul li:hover{
+    transition: all 0.3s;
+    
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.sidebar .links{
+    margin-bottom: 20px;
+}
+.sidebar .links a{
+    text-decoration: none;
+}
+
+.sidebar .links{
+    margin-top: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+.links a{
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+    
+}
+#check:checked~.sidebar{
+    left: 0;
+    
+}
+.open-btn{
+    cursor: pointer;
+    display: inline-block;
+    
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+}
+#check:checked~.open-btn{
+    opacity: 0;
+}
+.close-btn{
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+}
